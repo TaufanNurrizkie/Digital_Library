@@ -30,4 +30,7 @@ Route::middleware('auth')->get('/marketplace', function () {
     return view('marketplace.marketplace');
 })->name('marketplace');
 
+Route::middleware('auth')->get('/kategori', function () {
+    return view('marketplace.kategori');
+})->name('kategori');
 
