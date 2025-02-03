@@ -21,7 +21,8 @@
 
         /* Progress Bar */
         .progress-container {
-            width: 60%;
+            width: 80%;
+            max-width: 120px;
             height: 6px;
             background: #E5E7EB;
             border-radius: 10px;
