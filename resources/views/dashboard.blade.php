@@ -21,4 +21,10 @@
     </div>
 </x-app-layout>
 
+
+
+
+
+
+
 @endsection
