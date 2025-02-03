@@ -26,8 +26,16 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('admin/dashboard', [HomeController::class, 'index']);
 });
 
-Route::middleware('auth')->get('/marketplace', function () {
+
+
+//routes marketplace
+Route::get('/marketplace', function () {
     return view('marketplace.marketplace');
 })->name('marketplace');
-
+Route::get('/kategori', function () {
+    return view('marketplace.kategori');
+})->name('kategori');
+Route::get('/desk', function () {
+    return view('marketplace.desk');
+})->name('desk');
 
