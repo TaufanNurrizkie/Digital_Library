@@ -2,7 +2,9 @@
     <div class="container mx-auto flex items-center justify-between">
         <div class="flex items-center space-x-4">
             <div class="flex items-center space-x-2">
-                <div class="bg-gray-300 w-8 h-8 rounded-full"></div>
+                <div class=" w-16 h-16 ">
+                    <img src="{{ asset('img/Logo.png') }}" alt="Logo" class="w-full h-full object-cover ">
+                </div>
                 <span class="font-bold text-xl">Kategori</span>
             </div>
             <div class="relative">
