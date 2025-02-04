@@ -39,3 +39,19 @@ Route::get('/desk', function () {
     return view('marketplace.desk');
 })->name('desk');
 
+Route::middleware('auth')->get('/keranjang', function () {
+    return view('marketplace.keranjang');
+})->name('keranjang');
+
+Route::middleware('auth')->get('/deskripsi', function () {
+    return view('marketplace.deskripsi');
+})->name('deskripsi');
+
+Route::middleware('auth')->get('/profile', function () {
+    return view('profile.profile');
+})->name('profile');
+
+Route::middleware('auth')->get('/checkout', function () {
+    return view('marketplace.checkout');
+})->name('checkout');
+

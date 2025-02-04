@@ -4,7 +4,6 @@
 @section('content')
 <div class="flex justify-between items-center mb-4 p-4">
     <h2 class="text-xl font-bold">Buku Komik</h2>
-    <a href="#" class="text-blue-500 hover:underline">Lihat Semua</a>
 </div>
     <div class="grid grid-cols-5 gap-4 p-4">
         <div class="border rounded-lg p-4 flex flex-col items-center">
