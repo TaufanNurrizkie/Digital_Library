@@ -27,7 +27,7 @@
       <!-- Card: Item -->
       <div class="flex items-center p-4 bg-white rounded-2xl shadow-md border">
         <input type="checkbox" class="mr-4">
-        <img src="https://via.placeholder.com/100x150" alt="Buku Cover" class="w-24 h-32 object-cover rounded mr-4">
+        <img src="img/promo1.png" alt="Buku Cover" class="w-24 h-32 object-cover rounded mr-4">
         <div class="flex-grow">
           <p class="font-medium">Soft Cover</p>
           <p class="text-sm text-gray-600">Lout of Count's Family</p>

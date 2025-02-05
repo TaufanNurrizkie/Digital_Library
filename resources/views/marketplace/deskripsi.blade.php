@@ -6,7 +6,7 @@
     <div class="flex flex-col md:flex-row gap-8">
         <!-- Gambar Produk -->
         <div class="md:w-1/3">
-            <img src="{{ asset('storage/lout-of-counts-family.jpg') }}" alt="Lout of Count's Family" class="rounded-lg shadow-lg">
+            <img src=" img/promo2.png" alt="Lout of Count's Family" class="rounded-lg shadow-lg">
         </div>
 
         <!-- Detail Produk -->
