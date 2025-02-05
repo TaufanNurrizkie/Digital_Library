@@ -17,27 +17,38 @@
 
 
     <main class="container mx-auto p-6">
-        <!-- Carousel -->
-
-        <div class="grid grid-cols-3 gap-4 mb-8">
-            <div class="col-span-2 relative overflow-hidden">
-                <div id="carousel-container" class="flex transition-transform duration-500 ease-in-out w-full">
-                    <img src="img/promo1.png" class="w-full h-64 object-cover flex-shrink-0">
-                    <img src="img/promo2.png" class="w-full h-64 object-cover flex-shrink-0">
-                    <img src="img/Logo.png" class="w-full h-64 object-cover flex-shrink-0">
-                </div>
-                <button id="prev-btn" class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow">&#9664;</button>
-                <button id="next-btn" class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow">&#9654;</button>
-            </div>
-            <div class="flex flex-col space-y-4">
-                <div class="bg-gray-300 h-32 rounded-lg flex items-center justify-center overflow-hidden">
-                    <img src="img/promo1.png" class="h-full w-full object-cover rounded-lg">
-                </div>
-                <div class="bg-gray-300 h-32 rounded-lg flex items-center justify-center overflow-hidden">
-                    <img src="img/promo2.png" class="h-full w-full object-cover rounded-lg">
-                </div>
-            </div>
+     <!-- Carousel -->
+<div class="grid grid-cols-3 gap-4 mb-8">
+    <div class="col-span-2 relative overflow-hidden">
+        <div id="carousel-container" class="flex transition-transform duration-500 ease-in-out w-full">
+            <img src="img/promo1.png" class="w-full h-64 object-cover flex-shrink-0">
+            <img src="img/promo2.png" class="w-full h-64 object-cover flex-shrink-0">
+            <img src="img/Logo.png" class="w-full h-64 object-cover flex-shrink-0">
         </div>
+
+        <!-- Tombol Prev -->
+        <button id="prev-btn"
+            class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/50 hover:bg-white text-gray-700 p-3 rounded-full shadow-md transition duration-300 backdrop-blur">
+            ❮
+        </button>
+
+        <!-- Tombol Next -->
+        <button id="next-btn"
+            class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/50 hover:bg-white text-gray-700 p-3 rounded-full shadow-md transition duration-300 backdrop-blur">
+            ❯
+        </button>
+    </div>
+
+    <div class="flex flex-col space-y-4">
+        <div class="bg-gray-300 h-32 rounded-lg flex items-center justify-center overflow-hidden">
+            <img src="img/promo1.png" class="h-full w-full object-cover rounded-lg">
+        </div>
+        <div class="bg-gray-300 h-32 rounded-lg flex items-center justify-center overflow-hidden">
+            <img src="img/promo2.png" class="h-full w-full object-cover rounded-lg">
+        </div>
+    </div>
+</div>
+
         
 
 
