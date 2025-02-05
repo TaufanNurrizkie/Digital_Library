@@ -3,7 +3,16 @@
 
 @section('content')
 <div class="container mx-auto px-6 py-10">
-    <div class="flex flex-col md:flex-row gap-6">
+    <!-- Judul di luar sidebar -->
+<h2 class="text-2xl font-semibold mb-6">
+    <a href="" class="font-medium" style="color: #91A8D2;">Beranda</a> / Profile
+</h2>
+
+<div class="flex flex-col md:flex-row gap-6">
+    <div class="container mx-auto px-6 py-10">
+        <div class="flex flex-col md:flex-row gap-6">
+
+
         <!-- Sidebar Profil -->
         <div class="md:w-1/4 bg-white shadow-lg rounded-xl p-6 border border-gray-200">
             <div class="flex flex-col items-center">
@@ -16,7 +25,7 @@
                 <p class="text-gray-500 text-sm">user@gmail.com</p>
             </div>
             <div class="mt-6 space-y-4 border-t pt-4">
-                <a href="#" class="flex items-center text-blue-600 font-medium">Profile Summary</a>
+                <a href="#" class="flex items-center "style="color: #91A8D2;">Profile Summary</a>
                 <a href="#" class="block text-gray-600 hover:text-blue-600 flex items-center">
                     <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M4 19.5V5a2 2 2 0 012-2h10a2 2 0 012 2v14.5a2.5 2.5 0 01-2.5 2.5H6.5A2.5 2.5 0 014 19.5zM6.5 17H17"></path>
@@ -31,23 +40,23 @@
                 </a>
 
                 <hr>
-                <a href="#" class="flex items-center text-blue-600 font-medium">Profil</a>
+                <a href="#" class="flex items-center "style="color: #91A8D2;">Profil</a>
                 <a href="#" class="block text-gray-600 hover:text-blue-600">Pengaturan Profil</a>
                 <hr>
-                <a href="#" class="flex items-center text-blue-600 font-medium">Transaksi</a>
+                <a href="#" class="flex items-center "style="color: #91A8D2;">Transaksi</a>
                 <a href="#" class="block text-gray-600 hover:text-blue-600">Riwayat Pembayaran</a>
                 <hr>
-                <a href="#" class="block text-blue-600 font-medium">Notifikasi</a>
+                <a href="#" class="block "style="color: #91A8D2;">Notifikasi</a>
                 <a href="#" class="block text-gray-600 hover:text-blue-600">Notifikasi Saya</a>
                 <hr>
-                <a href="#" class="block text-blue-600 font-medium">Bantuan</a>
+                <a href="#" class="block"style="color: #91A8D2;">Bantuan</a>
                 <a href="#" class="block text-gray-600 hover:text-blue-600">Pusat Bantuan</a>
             </div>
         </div>
 
         <!-- Detail Profil -->
         <div class="md:w-3/4 bg-white shadow-lg rounded-xl p-6 border border-gray-200 flex flex-col">
-            <h2 class="text-xl font-semibold text-blue-600">Profile</h2> 
+            <h2 class="text-xl font-semibold"style="color: #91A8D2;">Profile</h2> 
 
             <div class="flex flex-col md:flex-row gap-6 mt-4">
                 <!-- Foto Profil + Button -->
@@ -65,12 +74,12 @@
 
                 <!-- Informasi Pengguna -->
                 <div class="flex-grow ml-6"> <!-- Menggunakan flex-grow agar tinggi card otomatis menyesuaikan isi -->
-                    <h3 class="text-lg font-semibold text-blue-600">Informasi Pengguna</h3> 
+                    <h3 class="text-lg font-semibold"style="color: #91A8D2;">Informasi Pengguna</h3> 
                     <p class="text-gray-600">Nama Lengkap</p>
                     <p class="text-gray-600">Tanggal Lahir</p>
                     <p class="text-gray-600">Jenis Kelamin</p>
                     <hr class="my-4">
-                    <h3 class="text-lg font-semibold text-blue-600">Informasi Personal</h3> 
+                    <h3 class="text-lg font-semibold"style="color: #91A8D2;">Informasi Personal</h3> 
                     <p class="text-gray-600">Email</p>
                     <p class="text-gray-600">No Telepon</p>
 

@@ -18,17 +18,30 @@
 
     <main class="container mx-auto p-6">
         <!-- Carousel -->
-        <div class="grid grid-cols-3 gap-4 mb-8">
-            <div class="col-span-2 relative">
-                <div class="bg-gray-300 h-64 rounded-lg"></div>
-                <button class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow">&#9664;</button>
-                <button class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow">&#9654;</button>
-            </div>
-            <div class="flex flex-col space-y-4">
-                <div class="bg-gray-300 h-32 rounded-lg"></div>
-                <div class="bg-gray-300 h-32 rounded-lg"></div>
-            </div>
-        </div>
+<div class="grid grid-cols-3 gap-4 mb-8">
+    <div class="col-span-2 relative">
+        <div class="bg-gray-300 h-64 rounded-lg"></div>
+
+        <!-- Tombol carousel kiri -->
+        <button class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:bg-[#91A8D2] hover:text-white transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+        </button>
+
+        <!-- Tombol carousel kanan -->
+        <button class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:bg-[#91A8D2] hover:text-white transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </button>
+    </div>
+    <div class="flex flex-col space-y-4">
+        <div class="bg-gray-300 h-32 rounded-lg"></div>
+        <div class="bg-gray-300 h-32 rounded-lg"></div>
+    </div>
+</div>
+
 
         <!-- Categories -->
         <div class="grid grid-cols-4 gap-4 mb-8">
