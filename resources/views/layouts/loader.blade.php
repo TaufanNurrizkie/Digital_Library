@@ -268,7 +268,7 @@
           </svg>
         </li>
       </ul>
-    </div><span>Loading</span></div>
+    </div></div>
 
         <!-- Progress Bar -->
         <div class="progress-container">
