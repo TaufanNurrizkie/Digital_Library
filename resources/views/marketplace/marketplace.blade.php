@@ -18,6 +18,7 @@
 
     <main class="container mx-auto p-6">
         <!-- Carousel -->
+
         <div class="grid grid-cols-3 gap-4 mb-8">
             <div class="col-span-2 relative overflow-hidden">
                 <div id="carousel-container" class="flex transition-transform duration-500 ease-in-out w-full">
@@ -38,6 +39,7 @@
             </div>
         </div>
         
+
 
         <!-- Categories -->
         <div class="grid grid-cols-4 gap-4 mb-8">

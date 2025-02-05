@@ -55,12 +55,13 @@
                         <p class="text-sm font-semibold">Rp199.000</p>
                     </div>
                 </div>
-                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg flex items-center space-x-2 hover:bg-blue-600">
+                <button class="bg-[#91A8D2] text-white px-4 py-2 rounded-lg flex items-center space-x-2 hover:bg-[#7891BC] transition">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M4 12h16M12 4v16"></path>
                     </svg>
                     <span>Keranjang</span>
                 </button>
+                
             </div>
         </div>
     </div>
