@@ -55,3 +55,7 @@ Route::middleware('auth')->get('/checkout', function () {
     return view('marketplace.checkout');
 })->name('checkout');
 
+Route::middleware('auth')->get('/homepage', function () {
+    return view('marketplace.homepage');
+})->name('homepage');
+
