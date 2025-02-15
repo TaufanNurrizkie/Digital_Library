@@ -6,14 +6,14 @@
     <div class="flex flex-col md:flex-row gap-8">
         <!-- Gambar Produk -->
         <div class="md:w-1/3">
-            <img src=" img/promo2.png" alt="Lout of Count's Family" class="rounded-lg shadow-lg">
+            <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}" class="rounded-lg shadow-lg">
         </div>
 
         <!-- Detail Produk -->
         <div class="md:w-2/3">
-            <h2 class="text-gray-500 text-sm">Yu Ryeo Han / Ping</h2>
-            <h1 class="text-2xl font-bold">Lout of Count’s Family</h1>
-            <p class="text-lg font-semibold text-gray-900">Rp199.000</p>
+            <h2 class="text-gray-500 text-sm">{{ $product->author }}</h2>
+            <h1 class="text-2xl font-bold">{{ $product->name }}</h1>
+            <p class="text-lg font-semibold text-gray-900">Rp{{ number_format($product->price, 0, ',', '.') }}</p>
             
             <!-- Tombol Favorit dan Bagikan -->
             <div class="flex items-center space-x-4 my-4">
@@ -48,11 +48,11 @@
             <!-- Tombol Keranjang -->
             <div class="mt-6 p-6 bg-white shadow-xl rounded-lg flex items-center justify-between border border-gray-300">
                 <div class="flex items-center space-x-3">
-                    <img src="{{ asset('storage/lout-of-counts-family.jpg') }}" alt="Lout of Count's Family" class="w-12 h-12 rounded">
+                    <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}" class="w-12 h-12 rounded">
                     <div>
-                        <p class="text-sm text-gray-700">Yu Ryeo Han / Ping</p>
-                        <p class="text-sm font-bold">Lout of Count’s Family</p>
-                        <p class="text-sm font-semibold">Rp199.000</p>
+                        <p class="text-sm text-gray-700">{{ $product->author }}</p>
+                        <p class="text-sm font-bold">{{ $product->name }}</p>
+                        <p class="text-sm font-semibold">Rp{{ number_format($product->price, 0, ',', '.') }}</p>
                     </div>
                 </div>
                 <button class="bg-[#91A8D2] text-white px-4 py-2 rounded-lg flex items-center space-x-2 hover:bg-[#7891BC] transition">
