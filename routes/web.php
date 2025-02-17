@@ -57,3 +57,7 @@ Route::middleware(['auth', 'admin'])->group(function () {
 
 
 
+Route::middleware('auth')->get('/homepage', function () {
+    return view('marketplace.homepage');
+})->name('homepage');
+
