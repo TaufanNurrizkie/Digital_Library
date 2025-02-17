@@ -3,10 +3,29 @@
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MarketplaceProductController;
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+
+Route::resource('marketplace/products', MarketplaceProductController::class);
+
+
+//routes marketplace
+Route::get('/marketplace', [MarketplaceProductController::class, 'index'])->name('marketplace');
+Route::get('/deskripsi/{id}', [MarketplaceProductController::class, 'show'])->name('product.show');
+
+Route::get('/kategori/{kategori}', [MarketplaceProductController::class, 'kategori'])->name('kategori.show');
+
+
+Route::get('/keranjang', function () {return view('marketplace.keranjang');})->name('keranjang');
+Route::get('/tes', function () {return view('profile.profile');})->name('profile');
+Route::middleware('auth')->get('/checkout', function () {return view('marketplace.checkout');})->name('checkout');
+
+
 
 
 Route::get('/dashboard', function () {
@@ -28,32 +47,15 @@ Route::middleware(['auth', 'admin'])->group(function () {
 
 
 
-//routes marketplace
-Route::get('/marketplace', function () {
-    return view('marketplace.marketplace');
-})->name('marketplace');
-Route::get('/kategori', function () {
-    return view('marketplace.kategori');
-})->name('kategori');
-Route::get('/desk', function () {
-    return view('marketplace.desk');
-})->name('desk');
 
-Route::middleware('auth')->get('/keranjang', function () {
-    return view('marketplace.keranjang');
-})->name('keranjang');
 
-Route::middleware('auth')->get('/deskripsi', function () {
-    return view('marketplace.deskripsi');
-})->name('deskripsi');
 
-Route::middleware('auth')->get('/profile', function () {
-    return view('profile.profile');
-})->name('profile');
 
-Route::middleware('auth')->get('/checkout', function () {
-    return view('marketplace.checkout');
-})->name('checkout');
+
+
+
+
+
 
 Route::middleware('auth')->get('/homepage', function () {
     return view('marketplace.homepage');
