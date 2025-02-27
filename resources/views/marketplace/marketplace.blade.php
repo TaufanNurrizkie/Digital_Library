@@ -1,5 +1,5 @@
 @extends('layouts.marketplaceLayout')
-{{-- @include('layouts.loader') --}}
+@include('layouts.loader')
 
 @section('content')
 <!DOCTYPE html>

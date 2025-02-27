@@ -1,8 +1,11 @@
 <?php
 
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BookController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ChapterController;
+use App\Http\Controllers\HomepageController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\MarketplaceProductController;
 
 Route::get('/', function () {
@@ -49,6 +52,9 @@ Route::middleware(['auth', 'admin'])->group(function () {
 
 
 
+Route::get('/books', [BookController::class, 'index'])->name('baca-online');
+Route::get('/books/{id}', [BookController::class, 'show'])->name('books.show');
+Route::get('/books/chapters/{id}', [ChapterController::class, 'show'])->name('chapters.show');
 
 
 
@@ -57,7 +63,6 @@ Route::middleware(['auth', 'admin'])->group(function () {
 
 
 
-Route::middleware('auth')->get('/homepage', function () {
-    return view('marketplace.homepage');
-})->name('homepage');
+
+Route::middleware('auth')->get('/homepage', [HomepageController::class, 'index'])->name('homepage');
 

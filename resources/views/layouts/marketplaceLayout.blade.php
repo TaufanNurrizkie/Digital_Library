@@ -1,3 +1,5 @@
+@vite('resources/css/app.css')
+
 <header class="bg-white shadow">
     <!-- Header Utama -->
     <div class="p-4">
@@ -10,9 +12,9 @@
             <!-- Tengah: Navigasi Utama -->
             <!-- Tengah: Navigasi Utama -->
 <nav class="flex space-x-6 text-gray-800 font-semibold">
-    <a href="#" class="hover:text-blue-500 relative after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-blue-500 after:left-0 after:bottom-0 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Home</a>
-    <a href="#" class="hover:text-blue-500 relative after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-blue-500 after:left-0 after:bottom-0 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Baca Online</a>
-    <a href="#" class="hover:text-blue-500 relative after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-blue-500 after:left-0 after:bottom-0 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Marketplace</a>
+    <a href="{{ route('homepage') }}" class="hover:text-blue-500 relative after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-blue-500 after:left-0 after:bottom-0 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Home</a>
+    <a href="{{ route('baca-online') }}" class="hover:text-blue-500 relative after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-blue-500 after:left-0 after:bottom-0 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Baca Online</a>
+    <a href="{{ route('marketplace') }}" class="hover:text-blue-500 relative after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-blue-500 after:left-0 after:bottom-0 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Marketplace</a>
     <a href="#" class="hover:text-blue-500 relative after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-blue-500 after:left-0 after:bottom-0 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Pinjam</a>
 </nav>
 
