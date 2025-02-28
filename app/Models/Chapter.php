@@ -23,5 +23,11 @@ class Chapter extends Model
         return $this->hasMany(Page::class);
     }
 
+    public function readers()
+{
+    return $this->belongsToMany(User::class, 'chapter_reads', 'chapter_id', 'user_id')->withTimestamps();
+}
+
+
 }
 

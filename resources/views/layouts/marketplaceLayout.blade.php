@@ -36,7 +36,7 @@
     </div>
 
     <!-- Sub-header: Kategori, Pencarian, Keranjang, dan Lonceng -->
-    {{-- <div class="bg-gray-50 py-4 shadow">
+     <div class="bg-gray-50 py-4 shadow">
         <div class="container mx-auto flex items-center justify-center space-x-8">
             <!-- Kategori -->
             <div class="relative group">
@@ -80,7 +80,7 @@
             </button>
 
         </div>
-    </div> --}}
+    </div> 
 </header>
 
 

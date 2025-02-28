@@ -18,7 +18,7 @@
     <h2 class="text-xl font-bold">Top Novel</h2>
     <div class="grid grid-cols-5 gap-4 my-4">
         @foreach($topNovel as $novel)
-            <a href="{{ route('books.show', $novel->id) }}" class="border rounded-lg p-2 flex flex-col items-center bg-white shadow-md hover:shadow-lg transition-shadow duration-300" style="width: 214px; height: 333px;">
+            <a href="{{ route('books.show', $novel->id) }}" class="border rounded-lg p-2 flex flex-col items-center bg-white shadow-md hover:shadow-lg transition-shadow duration-300"  style="width: 214px; height: 333px;">
                 <img src="{{ asset('storage/'.$novel->cover_img) }}" alt="{{ $novel->title }}" class="w-full h-60 object-cover rounded mb-4">
                 <div class="text-start">
                     <p class="font-semibold">{{ $novel->title }}</p>

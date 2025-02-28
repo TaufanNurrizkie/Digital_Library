@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Book;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class BookController extends Controller
 {
@@ -18,9 +19,14 @@ class BookController extends Controller
 }
 
 
-    public function show($id)
+public function show($id)
 {
-        $book = Book::findOrFail($id);
-        return view('BacaOnline.show', compact('book'));
+    $book = Book::with('chapters')->findOrFail($id);
+
+    $user = Auth::check() ? Auth::user()->load('readChapters') : null;
+
+    return view('BacaOnline.show', compact('book', 'user'));
 }
+
+
 }

@@ -45,4 +45,11 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function readChapters()
+    {
+        return $this->belongsToMany(Chapter::class, 'chapter_reads', 'user_id', 'chapter_id')->withTimestamps();
+    }
+    
+
 }
